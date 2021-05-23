@@ -4,7 +4,7 @@
 }
 
 .NavLinkActive {
-  color: darkgreen;
+  color: rgb(68, 13, 219);
 }
 .list {
   display: flex;

@@ -12,7 +12,7 @@ const AuthNav = () => (
           className={styles.NavLink}
           activeClassName={styles.NavLinkActive}
         >
-          Register
+          Sign up
         </NavLink>
       </li>
       <li className={styles.item}>
@@ -25,7 +25,7 @@ const AuthNav = () => (
           Login
         </NavLink>
       </li>
-    </ul>{' '}
+    </ul>
   </div>
 );
 export default AuthNav;

@@ -6,7 +6,9 @@ const Login = lazy(() =>
   import('../Components/Login/Login' /* webpackChunkName: "Login" */),
 );
 const Register = lazy(() =>
-  import('../Components/Register/Register' /* webpackChunkName: "Register" */),
+  import(
+    '../Components/Registration/Registration' /* webpackChunkName: "Register" */
+  ),
 );
 
 const routes = [

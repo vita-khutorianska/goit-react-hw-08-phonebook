@@ -2,7 +2,6 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import styles from './AppBar.module.css';
 import { connect } from 'react-redux';
-// import phoneBook from '../../image/3.png';
 import { getIsAuthenticated } from '../../Redux/Auth/auth_selector';
 
 const Navigation = ({ isLoginOn }) => (
@@ -12,9 +11,7 @@ const Navigation = ({ isLoginOn }) => (
       to="/homepage"
       className={styles.link}
       activeClassName={styles.activeLink}
-    >
-      {/* <img src={phoneBook} width="40" alt="PhoneBook" /> */}
-    </NavLink>
+    ></NavLink>
 
     {isLoginOn && (
       <NavLink
