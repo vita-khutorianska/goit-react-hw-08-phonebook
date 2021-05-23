@@ -9,7 +9,7 @@ import {
   logoutError,
   getCurrentUserSuccess,
   getCurrentUserError,
-} from '../auth/auth_actions';
+} from './auth_actions';
 const initial = { name: null, email: null };
 const user = createReducer(initial, {
   [registerSuccess]: (_, { payload }) => payload.user,
