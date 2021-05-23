@@ -1,17 +1,16 @@
 import { createAction } from '@reduxjs/toolkit';
+export const registerRequest = createAction('auth/registerRequest');
+export const registerSuccess = createAction('auth/registerSuccess');
+export const registerError = createAction('auth/registerError');
 
-export const getContactsRequest = createAction('contacts/getContactsRequest');
-export const getContactsSuccess = createAction('contacts/getContactsSuccess');
-export const getContactsFailure = createAction('contacts/getContactsFailurer');
+export const loginRequest = createAction('auth/loginRequest');
+export const loginSuccess = createAction('auth/loginSuccess');
+export const loginError = createAction('auth/loginError');
 
-export const addContactsRequest = createAction('contacts/addContactsRequest');
-export const addSuccess = createAction('contacts/addSuccess');
-export const addFailure = createAction('contacts/addFailure');
+export const logoutRequest = createAction('auth/logoutRequest');
+export const logoutSuccess = createAction('auth/logoutSuccess');
+export const logoutError = createAction('auth/logoutError');
 
-export const filterChange = createAction('contacts/filterChange');
-
-export const deleteContactsRequest = createAction(
-  'contacts/deleteContactsRequest',
-);
-export const deleteChangeSuccess = createAction('contacts/deleteChangeSuccess');
-export const deleteChangeFailure = createAction('contacts/deleteChangeFailure');
+export const getCurrentUserRequest = createAction('auth/getCurrentUserRequest');
+export const getCurrentUserSuccess = createAction('auth/getCurrentUserSuccess');
+export const getCurrentUserError = createAction('auth/getCurrentUserError');
