@@ -2,8 +2,8 @@ import { Component, Suspense, lazy } from 'react';
 import './App.css';
 // import styles from "./Routes/Route.module.css";
 import LinearProgress from '@material-ui/core/LinearProgress';
-// import Section from './Components/Section';
-// import HomePage from "./Components/AppBar/HomePage";
+
+// import HomePage from './Components/AppBar/HomePage';
 import { connect } from 'react-redux';
 import { getUser } from './Redux/Auth/auth_operation';
 import { getLoading } from './Redux/Phonebook/phonebook-selectors';
@@ -23,7 +23,9 @@ const Login = lazy(() =>
   import('./Components/Login/Login' /* webpackChunkName: "Login" */),
 );
 const Register = lazy(() =>
-  import('./Components/Register/Register' /* webpackChunkName: "Register" */),
+  import(
+    './Components/Registration/Registration' /* webpackChunkName: "Registration" */
+  ),
 );
 class App extends Component {
   // function App ()
@@ -44,24 +46,6 @@ class App extends Component {
           }
         >
           <Switch>
-            {/* {routes.map(
-                ({ path, exact, isProtected, component: Component }) =>
-                  isProtected ? (
-                    <PrivateRoute
-                      key={path}
-                      path={path}
-                      exact={exact}
-                      component={Component}
-                    />
-                  ) : (
-                    <PublicRoute
-                      key={path}
-                      exact={exact}
-                      path={path}
-                      component={Component}                    
-                    />
-                  )
-              )} */}
             <PublicRoute
               path="/homePage"
               restricted
