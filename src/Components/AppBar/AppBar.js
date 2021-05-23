@@ -3,7 +3,7 @@ import AuthNav from './authNav';
 import UserMenu from './UserMenu';
 import Navigation from './Navigation';
 import styles from './AppBar.module.css';
-import { getIsAuthenticated } from '../../Redux/Auth/auth_operation';
+import { getIsAuthenticated } from '../../Redux/Auth/auth_selector';
 
 const AppBar = ({ isLoginOn }) => (
   <header className={styles.header}>
